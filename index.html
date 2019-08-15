@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<link rel="stylesheet" href="w3.css">
+<title>FUBBLE</title>
+<link rel="icon" type="text/css" href="photos/f.jpg">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<style type="text/css">
+	body {
+		
+		background-image: url("photos/book.jpg");
+		font-family: 'Roboto', sans-serif;
+	}
+	.form-control, .form-control:focus, .input-group-addon {
+		border-color: #e1e1e1;
+	}
+    .form-control, .btn {        
+        border-radius: 3px;
+    }
+	.signup-form {
+		width: 390px;
+		margin: 0 auto;
+		padding: 30px 0;
+	}
+    .signup-form form {
+		color: #999;
+		border-radius: 3px;
+    	margin-bottom: 15px;
+        background: #fff;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+	.signup-form h2 {
+		color: #333;
+		font-weight: bold;
+        margin-top: 0;
+    }
+    .signup-form hr {
+        margin: 0 -30px 20px;
+    }
+	.signup-form .form-group {
+		margin-bottom: 20px;
+	}
+	.signup-form label {
+		font-weight: normal;
+		font-size: 13px;
+	}
+	.signup-form .form-control {
+		min-height: 38px;
+		box-shadow: none !important;
+	}	
+	.signup-form .input-group-addon {
+		max-width: 42px;
+		text-align: center;
+	}
+	.signup-form input[type="checkbox"] {
+		margin-top: 2px;
+	}   
+    .signup-form .btn{        
+        font-size: 16px;
+        font-weight: bold;
+		background: #19aa8d;
+		border: none;
+		min-width: 140px;
+    }
+	.signup-form .btn:hover, .signup-form .btn:focus {
+		background: #179b81;
+        outline: none;
+	}
+	.signup-form a {
+		color: #fff;	
+		text-decoration: underline;
+	}
+	.signup-form a:hover {
+		text-decoration: none;
+	}
+	.signup-form form a {
+		color: #19aa8d;
+		text-decoration: none;
+	}	
+	.signup-form form a:hover {
+		text-decoration: underline;
+	}
+	.signup-form .fa {
+		font-size: 21px;
+	}
+	.signup-form .fa-paper-plane {
+		font-size: 18px;
+	}
+	.signup-form .fa-check {
+		color: #fff;
+		left: 17px;
+		top: 18px;
+		font-size: 7px;
+		position: absolute;
+	}
+		*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+::placeholder {
+  color: black;
+  opacity: 1;
+
+:-ms-input-placeholder {
+ color: black;
+}
+
+::-ms-input-placeholder {
+ color: black;
+}
+
+
+</style>
+</head>
+<body>  <div style='color:white'><U><center><h1><b>FUBBLE</b></h1>
+         <h2>ONLINE DISCUSSION FORUM</h2>
+    <img src="photos/FUBBLE.png" height="40%" width="40%">
+    <h3>GIVE WINGS TO YOUR CURIOSITY!!!</h3></U>
+  </center></div>
+<div class="signup-form">
+    <form action="signin.php" method="post">
+		<h2>Sign Up</h2>
+		<p>Please fill in this form to create an account!</p>
+		<hr>
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-user"></i></span>
+				<input type="text" class="form-control" name="usrnam" placeholder="Username" required="required">
+			</div>
+        </div>
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+				<input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+			</div>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+				<input type="password" class="form-control" name="pass" placeholder="Password" required="required">
+			</div>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon">
+					<i class="fa fa-lock"></i>
+					<i class="fa fa-check"></i>
+				</span>
+				<input type="password" class="form-control" name="cpass" placeholder="Confirm Password" required="required">
+			</div>
+        </div>
+        <div class="form-group">
+			<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+		</div>
+		<div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+        </div>
+    </form>
+	 <div class="text-center"><b>Already have an account?</b> 
+	   <div class="w3-container">
+   <button onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;block&#39;" class="w3-button w3-green w3-large">LOGIN HERE</button>
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+  
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;" class="w3-button w3-xlarge w3-transparent w3-display-topright w3-red" title="Close Modal">x</span>
+        <img src="photos/img_avatar4.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="login.php" method="post">
+        <div class="w3-section">
+          <label><b>Username</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="USERNAME/Email" name="usrnam" required="">
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="Password" placeholder="PASSWORD" name="pass" required="">
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+        </div>
+      </form>
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+      	<button onclick="location.href='ForgetPass.html';" type="button" class="w3-button w3-red">FORGET PASSWORD</button>
+        <button onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;" type="button" class="w3-button w3-red">Cancel</button><br>
+      </div>
+
+    </div>
+  </div>
+</div>
+      
+</div>
+</div>
+</body>
+</html>  
+<!-- Team Section -->
+<center>
+<h2 style="color: white">MEET THE TEAM</h2>
+<h4 style="color: white">Our main aim is to connect people. As we know many of our problems are solved by each other so we provide a platform to disscuss about any topic and know the thoughts of others </h4>
+</center>
+<br>
+
+<div class="row" style="color: white">
+	<div class="column"></div>
+  <div class="column">
+    <div class="card">
+      <center><img src="photos/asit.jpg" alt="Asit" style="width:70%" class="w3-circle w3-margin-top"></center>
+      <div class="container">
+        <h2>ASIT KUMAR</h2>
+        <h4><p class="title">Web Designer</p></h4>
+        <p>Some text that describes me lorem i</p>
+        <p><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>asitkumar20115@yahoo.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column" style="color: white">
+    <div class="card">
+     <center> <img src="photos/akash.jpg" alt="Akash" style="width:70%" class="w3-circle w3-margin-top"></center>
+      <div class="container">
+        <h2>AKASH KUMAR BHAGAT</h2>
+        <h4><p class="title">PHP and Database Operator</p></h4>
+        <p>Some text that describes me lorem i.</p>
+        <p><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>akashkbhagat221199@gmail.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="column"></div>
+</div>
+</body>
+</html>                            
+ </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center" style="color:white">WHERE TO FIND ME</h3>
+  <h4 class="w3-center" style="color:white"><em>I'd love your feedback!</em></h4>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="photos/nsec.jpg" class="w3-image w3-round" style="width:100%">
+    </div><b>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom"><h4 style="color:black"><b>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Netaji Subhash Engineering college, Garia ,Kolkata , INDIA<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Phone: +91 7004000074<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Email:askme.fubble1199@gmail.com<br></h4></b>
+      </div>
+      <h4 style="color: black">Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</h4></b>
+      <form action="contact.php" method='post'>
+        <div class="w3-row-padding w3-input" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <input class="w3-button w3-black w3-right w3-section" type="submit" value="SEND MESSAGE">
+      </form>
+    </div>
+  </div>
+</div>
