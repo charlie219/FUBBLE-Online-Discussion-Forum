@@ -69,7 +69,7 @@ input[type=text] {
 $con=mysqli_connect("localhost","root","","fubble");
 $sql = "SELECT id,NAME FROM disscussion";
 $result = $con->query($sql);
-echo("<H1 class='body-rl' style='color:white'><center><b><u>FUBBLE<BR>ONLINE DISSCUSSION FORUM<BR> MY PROFILE<BR></B><BR>
+echo("<H1 class='body-rl' style='color:black'><center><b><u>FUBBLE<BR>ONLINE DISSCUSSION FORUM<BR> MY PROFILE<BR></B><BR>
 	<img src='photos/FUBBLE.png' height='30%'></H1><br><center><h1 class='body-rl w3-black' style='color:white'><br>ONGOING TOPICS<br></h1></U>
 	</center>");
 if ($result->num_rows > 0) {
