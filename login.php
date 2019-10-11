@@ -25,7 +25,7 @@ else{
 	else
 		echo("<center><h1>
 			WRONG PASSWORD....<br>
-			<a href=index.html>click here to retry....</a></center>");
+			<a href=index.html>Please click here to Retry!</a></center>");
 }
 
 
